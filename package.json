@@ -41,6 +41,7 @@
   "devDependencies": {
     "@nextui-org/button": "^2.0.26",
     "@nextui-org/modal": "^2.0.28",
+    "@nextui-org/progress": "^2.0.24",
     "@nextui-org/scroll-shadow": "^2.1.12"
   }
 }

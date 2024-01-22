@@ -215,13 +215,13 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
 
 export const ChevronIcon = (props: IconSvgProps) => (
 	<svg
-			fill="none"
-			height={24}
-			viewBox="0 0 24 24"
-			width={24}
-			xmlns="http://www.w3.org/2000/svg"
-			{...props}
-		>
+		fill="none"
+		height={24}
+		viewBox="0 0 24 24"
+		width={24}
+		xmlns="http://www.w3.org/2000/svg"
+		{...props}
+	>
 		<path
 			id="Vector"
 			d="M10 8L14 12L10 16"
@@ -234,22 +234,41 @@ export const ChevronIcon = (props: IconSvgProps) => (
 );
 
 export const UserIcon = (props: IconSvgProps) => (
-	<svg 
-	width='1em'
-	height='1em'
-	viewBox="0 0 24 24" 
-	version="1.1" 
-	fill="#7e22ce"
-	overflow='hidden'
-	xmlns="http://www.w3.org/2000/svg"
+	<svg
+		width='1em'
+		height='1em'
+		viewBox="0 0 24 24"
+		version="1.1"
+		fill="#7e22ce"
+		overflow='hidden'
+		xmlns="http://www.w3.org/2000/svg"
 	>
-		<path 
-		d="M170.666667 938.666667a341.333333 341.333333 0 1 1 682.666666 0h-85.333333a256 256 0 1 0-512 0H170.666667z m341.333333-384c-141.44 0-256-114.56-256-256s114.56-256 256-256 256 114.56 256 256-114.56 256-256 256z m0-85.333334c94.293333 0 170.666667-76.373333 170.666667-170.666666s-76.373333-170.666667-170.666667-170.666667-170.666667 76.373333-170.666667 170.666667 76.373333 170.666667 170.666667 170.666666z" 
-		stroke="#7e22ce" 
-		strokeLinecap="round"
-		strokeLinejoin="round"
-		strokeWidth="2"
+		<path
+			d="M170.666667 938.666667a341.333333 341.333333 0 1 1 682.666666 0h-85.333333a256 256 0 1 0-512 0H170.666667z m341.333333-384c-141.44 0-256-114.56-256-256s114.56-256 256-256 256 114.56 256 256-114.56 256-256 256z m0-85.333334c94.293333 0 170.666667-76.373333 170.666667-170.666666s-76.373333-170.666667-170.666667-170.666667-170.666667 76.373333-170.666667 170.666667 76.373333 170.666667 170.666667 170.666666z"
+			stroke="#7e22ce"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth="2"
 		/>
 	</svg>
 );
 
+export const MenuIcon = (props: IconSvgProps) => (
+	<svg
+		width='2em'
+		height='2em'
+		viewBox="0 0 20 20"
+		version="1.1"
+		fill="#7e22ce"
+		overflow='hidden'
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+			stroke="#7e22ce"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth="2"
+		/>
+	</svg>
+);
