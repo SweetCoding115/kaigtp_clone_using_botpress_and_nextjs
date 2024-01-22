@@ -132,6 +132,8 @@ export default function Home() {
 	const sendBtnRef2 = useRef<HTMLButtonElement | null>(null)
 	const inputRef = useRef<HTMLTextAreaElement | null>(null)
 	const chatContainerRef = useRef<HTMLTextAreaElement | null>(null)
+  const [log, setLog] = useState([message[0]])
+
 	const handle = () => {
 		setShowModal(prev => !prev)
 		setShowPrompts(prev => !prev)
@@ -174,7 +176,7 @@ export default function Home() {
 		if (chatContainerRef.current) {
 			chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
 		}
-	}, [message]);
+	}, [message, log]);
 	return (
 		<section className="flex flex-row items-center justify-between w-full h-screen">
 			<div className={`flex flex-row w-80 duration-700 bg-green-300 items-center justify-center h-full`}>sidebar</div>
@@ -214,7 +216,7 @@ export default function Home() {
 							</div>
 							<Button isIconOnly onClick={handleNext} className="absolute right-0 translate-x-[120%]">{">"}</Button>
 						</div>
-						<ChattingLog message={message} />
+						<ChattingLog log={log} setLog={setLog} message={message} />
 					</div>
 				</ScrollShadow>
 				<div className="max-w-5xl px-20 py-3 w-full h-auto flex gap-2">
